@@ -118,6 +118,9 @@ public class ParserStandard implements Parser<String> {
             List<String> columnValuesList = new ArrayList<>();
             Collections.addAll(columnValuesList, columnValues);
             dictionary.addColumn(columnName, columnValuesList);
+        } else {
+            System.out.println("Ошибка: в одной из строк словаря не найдено знака-разделителя (\":\") после названия столбца. " +
+                    "Строка не может быть включена в словарь. Текст строки: " + columnLine);
         }
     }
 
