@@ -61,4 +61,12 @@ public class EntryChecker {
         return res;
     }
 
+    public int getRuleCount() {
+        return rules.size();
+    }
+
+    public int getEntryCount() {
+        return entries.size();
+    }
+
 }
